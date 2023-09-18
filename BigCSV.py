@@ -15,7 +15,7 @@ if not os.path.exists(diretorio_saida):
 dataframes = []
 
 #Nomes dos arquivos CSV a serem combinados
-arquivos_csv = ['2019.csv', '2020.csv', '2021.csv', '2022.csv', '2023.csv']
+arquivos_csv = ['2018.csv', '2019.csv', '2020.csv', '2021.csv', '2022.csv']
 
 #Lê cada arquivo CSV e o adiciona à lista de DataFrames
 for arquivo in arquivos_csv:
@@ -27,6 +27,6 @@ for arquivo in arquivos_csv:
 df_combinado = pd.concat(dataframes, ignore_index=True)
 
 # Salva o DataFrame combinado como um arquivo CSV no diretório de saída
-nome_arquivo_saida = os.path.join(diretorio_saida, '10105.csv')
+nome_arquivo_saida = os.path.join(diretorio_saida, '10100.csv')
 df_combinado.to_csv(nome_arquivo_saida, index=False)
 
