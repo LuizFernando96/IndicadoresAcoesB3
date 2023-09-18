@@ -8,8 +8,8 @@ if not os.path.exists(diretorio_destino):
     os.makedirs(diretorio_destino)
 
 #Criando loop para que todos os arquivos sejam baixados de forma automática
-Ano = 2019
-while Ano <= 2023:
+Ano = 2018
+while Ano <= 2022:
     
     #URL do arquivo ZIP que você deseja baixar
     url = "https://bvmf.bmfbovespa.com.br/InstDados/SerHist/COTAHIST_A" + str(Ano) + ".ZIP"
