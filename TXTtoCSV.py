@@ -6,8 +6,8 @@ diretorio_destino = 'E:\\Luiz\\ETL\\JamesVirtual\\Arquivos_CSV'
 if not os.path.exists(diretorio_destino):
     os.makedirs(diretorio_destino)
 
-Ano = 2019
-while Ano <= 2023:
+Ano = 2018
+while Ano <= 2022:
     #Seleciona o arquivo TXT (Selecionar de acordo com o local onde o arquivo se encontra)
     f_bovespa = 'E:\\Luiz\\ETL\\JamesVirtual\\Arquivos_TXT\\' + 'COTAHIST_A' + str(Ano) + '.txt'
 
